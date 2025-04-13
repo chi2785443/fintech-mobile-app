@@ -1,50 +1,159 @@
-# Welcome to your Expo app 👋
+# 💸 Fintech Mobile Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, secure, and scalable **Fintech mobile app** built with **React Native** and **Expo Router**. This application enables seamless financial services with robust biometric authentication, real-time data handling, local secure storage, and fluid UI animations powered by Skia.
 
-## Get started
+<p align="center">
+  <img src="https://img.shields.io/badge/Expo-52.0.44-blue" />
+  <img src="https://img.shields.io/badge/React%20Native-0.76.9-61DAFB" />
+  <img src="https://img.shields.io/badge/License-MIT-green" />
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 📸 Preview
 
-2. Start the app
+> 🎬 **Demo coming soon**  
+> Below are preview screenshots of the app:
 
-   ```bash
-    npx expo start
-   ```
+<p align="center">
+  <img src="Screenshot_1744579758.png" width="200" /> 
+  <img src="Screenshot_1744579920.png" width="200" />
+  <img src="Screenshot_1744579928.png" width="200" />
+  <img src="Screenshot_1744579998.png" width="200" />
+  <img src="Screenshot_1744580004.png" width="200" />
+  <img src="Screenshot_1744580030.png" width="200" />
+  <img src="Screenshot_1744580092.png" width="200" />
+  <img src="Screenshot_1744580101.png" width="200" />
+</p>
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🚀 Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 🔐 **Biometric Authentication** using `expo-local-authentication`
+- 🔒 **Secure Auth Flows** powered by Clerk (`@clerk/clerk-expo`)
+- 📊 **Interactive Charts** with `victory-native`
+- 🎨 **Fluid Animations** using `@shopify/react-native-skia`
+- 🧭 **Powerful Routing** with `expo-router`
+- 💾 **Encrypted Storage** via `expo-secure-store` & `react-native-mmkv`
+- ⚙️ **Dynamic App Icon Switching**
+- 🔄 **Smart Data Caching & Fetching** using `@tanstack/react-query`
+- 🧠 **Lightweight State Management** with `zustand`
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🧱 Tech Stack
+
+### 🧰 Core Stack
+
+- **React Native** (with Expo SDK 52)
+- **Expo Router**
+- **TypeScript**
+
+### 🖌️ UI & UX
+
+- React Native Skia
+- Zeego overlays
+- Victory Native (charts)
+- Expo Blur, Font, Haptics, Video
+
+### 🔐 Auth & Security
+
+- Clerk Authentication
+- Biometric Login (Fingerprint/Face ID)
+- Encrypted storage: Secure Store + MMKV
+
+### 🔗 API & Data
+
+- React Query (TanStack) for API/data management
+- Date-fns for time formatting
+
+---
+
+## 🗂️ Folder Structure
 
 ```bash
-npm run reset-project
+.
+├── app/                   # Route-based navigation (Expo Router)
+│   ├── (authenticated)/(crypto)            # crypto info page
+│   ├── (authenticated)/(modals)  #all ovelays
+│   ├── (authenticated)/(tab)            # Main navigation tabs
+│   ├── (api)/            # Main navigation tabs
+│   ├── (verify)/            # verify number
+│   └── _layout.tsx        # Global layout wrapper
+├── components/            # Reusable UI components
+├── constants/             # Static values (colors, fonts, config)
+├── hooks/                 # Custom React hooks
+├── services/              # API & backend logic
+├── store/                 # Zustand store (global state)
+├── types/                 # Shared TypeScript types
+├── utils/                 # Helper functions
+└── scripts/               # Project utility scripts
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🧪 Running Locally
 
-To learn more about developing your project with Expo, look at the following resources:
+### 🔄 Step 1: Clone the repository
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+git clone https://github.com/your-username/fintech.git
+cd fintech
+```
 
-## Join the community
+### 📦 Step 2: Install dependencies
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+# or
+yarn
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### ▶️ Step 3: Run the development server
+
+```bash
+npx expo start
+```
+
+---
+
+## 🧪 Testing
+
+Run all tests with:
+
+```bash
+npm test
+```
+
+Powered by **Jest** and **Jest-Expo**.
+
+---
+
+## 🤝 Contribution
+
+We welcome PRs and feature suggestions!
+
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a pull request
+
+Please follow our style and naming conventions.
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+See the [LICENSE](./LICENSE) file for more details.
+
+---
+
+## 👨🏽‍💻 Author
+
+**Chinedu Aguwa**  
+📧 [neduaguwa443@gmail.com](mailto:neduaguwa443@gmail.com)  
+📞 +234 810 547 1046  
+[LinkedIn](https://www.linkedin.com/in/chinedu-aguwa-b1747a2b0) • [GitHub](https://github.com/chi2785443)
